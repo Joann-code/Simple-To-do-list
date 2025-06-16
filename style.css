@@ -1,0 +1,64 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+  margin-top: 50px;
+  background-image: url('todolist.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+}
+
+input, button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px; /* Oval shape */
+  font-size: 16px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 15px;
+  margin: 8px auto;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+button.delete-btn {
+  background-color: crimson;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+}
